@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #4caf50;
+    color: white;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.navbar .brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.navbar .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar .links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #191a19;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: cursive;
+    font-size: 50px;
+    font-weight: bold;
+    filter: drop-shadow(10px 10px 20px);
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn-primary {
+    background-color: white;
+    color: #4caf50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: cursive;
+    font-size: 50px;
+    font-weight: bold;
+    filter: drop-shadow(10px 10px 20px);
+}
+
+.hero .btn-primary:hover {
+    background-color: #f1f1f1;
+}
+
+/* Forms */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+    width: calc(100% - 20px); /* Adjust width to fit within the form box */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: center;
+    }
+
+    .navbar .brand {
+        margin-bottom: 10px;
+    }
+
+    .navbar .links {
+        flex-direction: column;
+    }
+
+    .navbar .links a {
+        margin: 5px 0; /* Add space between stacked links */
+    }
+
+    .hero h1 {
+        font-size: 2em; /* Reduce heading size */
+    }
+
+    .hero p {
+        font-size: 1em; /* Adjust paragraph size */
+    }
+
+    form {
+        width: 90%; /* Ensure form fits smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8em; /* Further reduce heading size */
+    }
+
+    h1, h2 {
+        font-size: 35px; /* Adjust headings for smaller screens */
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9rem; /* Adjust input font size */
+    }
+
+    form button {
+        padding: 8px 16px; /* Reduce button size */
+    }
+}

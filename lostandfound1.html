@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found Platform</title>
+    <link rel="stylesheet" href="lostandfound1style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <a href="#" class="brand">Lost & Found</a>
+            <div class="links">
+                <a href="#report-lost">Report Lost Item</a>
+                <a href="#report-found">Report Found Item</a>
+                <a href="#search">Search Items</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Lost Something? Found Something?</h1>
+            <p>Report lost or found items and connect with the rightful owners.</p>
+            <button class="btn-primary">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Report Lost Item Section -->
+    <section id="report-lost">
+        <h2>Report Lost Item</h2>
+        <form id="reportLostForm">
+            <input type="text" id="itemName" placeholder="Item Name">
+            <textarea id="description" placeholder="Description"></textarea>
+            <input type="datetime-local" id="dateTimeLost">
+            <input type="text" id="locationLost" placeholder="Location">
+            <input type="email" id="contactEmail" placeholder="Contact Email">
+            <input type="tel" id="contactPhone" placeholder="Contact Phone">
+            <input type="file" id="imageUpload">
+            <button type="button" id="reportLostBtn">Submit Report</button>
+        </form>
+    </section>
+
+    <!-- Report Found Item Section -->
+    <section id="report-found">
+        <h2>Report Found Item</h2>
+        <form id="reportFoundForm">
+            <input type="text" id="foundItemName" placeholder="Item Name">
+            <textarea id="foundDescription" placeholder="Description"></textarea>
+            <input type="datetime-local" id="dateTimeFound">
+            <input type="text" id="locationFound" placeholder="Location">
+            <input type="email" id="foundContactEmail" placeholder="Contact Email">
+            <input type="tel" id="foundContactPhone" placeholder="Contact Phone">
+            <input type="file" id="foundImageUpload">
+            <button type="button" id="reportFoundBtn">Submit Report</button>
+        </form>
+    </section>
+
+    <!-- Search Items Section -->
+    <section id="search">
+        <h2>Search Items</h2>
+        <form id="searchForm">
+            <input type="text" id="searchItemName" placeholder="Item Name">
+            <input type="date" id="searchDate">
+            <input type="text" id="searchLocation" placeholder="Location">
+            <button type="button" id="searchBtn">Search</button>
+        </form>
+        <div id="searchResults"></div>
+    </section>
+
+    <script src="lostandfound1script.js"></script>
+</body>
+</html>
+ 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedbackformstyle.css">
+</head>
+<body>
+
+    
+    <div class="container">
+        <h2>Feedback Form</h2>
+        <form id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+            
+            <label for="type">Feedback Type:</label>
+            <select id="type" name="type">
+                <option value="suggestion">Suggestion</option>
+                <option value="complaint">Complaint</option>
+                <option value="inquiry">Inquiry</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your feedback here..." required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="submitted-data" id="submittedData" style="display: none;">
+            <h3>Submitted Feedback:</h3>
+            <p><strong>Name:</strong> <span id="displayName"></span></p>
+            <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+            <p><strong>Feedback Type:</strong> <span id="displayType"></span></p>
+            <p><strong>Message:</strong> <span id="displayMessage"></span></p>
+        </div>
+    </div>
+    <script src="feedbackformscript.js"></script>
+</body>
+</html>
